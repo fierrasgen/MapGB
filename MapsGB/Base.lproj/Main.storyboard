@@ -31,14 +31,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qlj-aZ-tKO">
-                        <barButtonItem key="leftBarButtonItem" title="add Marker" id="dJG-Lr-wLW">
+                        <barButtonItem key="leftBarButtonItem" title="Start tracking" id="fVK-Ne-wNK">
                             <connections>
-                                <action selector="addMarkerAction:" destination="BYZ-38-t0r" id="fVS-t7-cmb"/>
+                                <action selector="trackButtonAction:" destination="BYZ-38-t0r" id="Tvy-M0-Xum"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Last tracking" id="NnL-CE-8Yo">
+                            <connections>
+                                <action selector="lastTrackingButtonAction:" destination="BYZ-38-t0r" id="yss-iP-yfe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="lastTrackingButton" destination="NnL-CE-8Yo" id="tnq-Bu-iEd"/>
                         <outlet property="mapView" destination="9NO-7E-zVk" id="FDB-k8-fCO"/>
+                        <outlet property="trackPositionButton" destination="fVK-Ne-wNK" id="no8-UV-bBo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
