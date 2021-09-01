@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="MapsGB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-lA-68F">
+                                <rect key="frame" x="20" y="179" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-5u-VkU">
+                                <rect key="frame" x="20" y="238" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-t4-UM8">
+                                <rect key="frame" x="185" y="322" width="44" height="30"/>
+                                <state key="normal" title="Войти"/>
+                                <connections>
+                                    <action selector="login:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LzU-jl-LiH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFK-Md-xOA">
+                                <rect key="frame" x="130" y="377" width="154" height="30"/>
+                                <state key="normal" title="Восстановить пароль"/>
+                                <connections>
+                                    <action selector="recovery:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JGP-iV-7li"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vY2-5u-VkU" firstAttribute="top" secondItem="QeC-lA-68F" secondAttribute="bottom" constant="25" id="2XG-Um-MCu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cFK-Md-xOA" secondAttribute="trailing" constant="130" id="3SQ-YZ-Lgr"/>
+                            <constraint firstItem="cFK-Md-xOA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="130" id="GJ0-mp-Mu5"/>
+                            <constraint firstItem="QeC-lA-68F" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="XGo-13-ZeK"/>
+                            <constraint firstItem="cFK-Md-xOA" firstAttribute="top" secondItem="TQH-t4-UM8" secondAttribute="bottom" constant="25" id="am6-r8-To9"/>
+                            <constraint firstItem="vY2-5u-VkU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fPc-zl-9jU"/>
+                            <constraint firstItem="TQH-t4-UM8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="185" id="hJb-nZ-qqB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QeC-lA-68F" secondAttribute="trailing" constant="20" id="hwT-DO-QuI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TQH-t4-UM8" secondAttribute="trailing" constant="185" id="nxK-1n-GYs"/>
+                            <constraint firstItem="QeC-lA-68F" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="91" id="qWD-2a-yOb"/>
+                            <constraint firstItem="TQH-t4-UM8" firstAttribute="top" secondItem="vY2-5u-VkU" secondAttribute="bottom" constant="50" id="r9l-9m-Onm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="cFK-Md-xOA" secondAttribute="bottom" constant="455" id="uFC-l4-pr1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vY2-5u-VkU" secondAttribute="trailing" constant="20" id="vYo-SF-wuk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hdl-QC-WyM"/>
+                    <connections>
+                        <outlet property="loginView" destination="QeC-lA-68F" id="im9-Go-izr"/>
+                        <outlet property="passwordView" destination="vY2-5u-VkU" id="Uva-Cg-7nq"/>
+                        <segue destination="j1o-3c-nGF" kind="show" identifier="onRecover" id="FT6-c6-svX"/>
+                        <segue destination="vQB-iY-fBa" kind="presentation" identifier="toMain" modalPresentationStyle="fullScreen" id="Rcx-Ia-A70"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="34.821428571428569"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ytN-cf-Pe9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="vQB-iY-fBa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbY-SG-EM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608" y="-398"/>
+        </scene>
+        <!--Recovery Password View Controller-->
+        <scene sceneID="3LI-bk-Ww4">
+            <objects>
+                <viewController id="j1o-3c-nGF" customClass="RecoveryPasswordViewController" customModule="MapsGB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BA5-hY-lKM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m3-qo-ELc">
+                                <rect key="frame" x="130" y="305" width="154" height="30"/>
+                                <state key="normal" title="Восстановить пароль"/>
+                                <connections>
+                                    <action selector="recovery:" destination="j1o-3c-nGF" eventType="touchUpInside" id="YEv-49-m2v"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mte-dz-udQ">
+                                <rect key="frame" x="20" y="241" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xzn-8u-9eq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xzn-8u-9eq" firstAttribute="bottom" secondItem="0m3-qo-ELc" secondAttribute="bottom" constant="527" id="0bn-kC-hVt"/>
+                            <constraint firstItem="xzn-8u-9eq" firstAttribute="trailing" secondItem="0m3-qo-ELc" secondAttribute="trailing" constant="130" id="2td-84-HfD"/>
+                            <constraint firstItem="xzn-8u-9eq" firstAttribute="trailing" secondItem="mte-dz-udQ" secondAttribute="trailing" constant="20" id="Jfe-sk-d3Y"/>
+                            <constraint firstItem="0m3-qo-ELc" firstAttribute="top" secondItem="mte-dz-udQ" secondAttribute="bottom" constant="30" id="eXD-hC-Hdy"/>
+                            <constraint firstItem="mte-dz-udQ" firstAttribute="leading" secondItem="xzn-8u-9eq" secondAttribute="leading" constant="20" id="fnZ-Rn-bGX"/>
+                            <constraint firstItem="mte-dz-udQ" firstAttribute="top" secondItem="xzn-8u-9eq" secondAttribute="top" constant="153" id="txn-OR-DHm"/>
+                            <constraint firstItem="0m3-qo-ELc" firstAttribute="leading" secondItem="xzn-8u-9eq" secondAttribute="leading" constant="130" id="y3G-LR-vHD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zMI-fq-nuG"/>
+                    <connections>
+                        <outlet property="loginView" destination="mte-dz-udQ" id="ggl-hw-KBO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtx-oL-1X9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2013.0434782608697" y="34.821428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0VM-xw-e0v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sSl-ux-cvu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A4G-B3-iUw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="FBf-QA-8Si"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVa-3I-CiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

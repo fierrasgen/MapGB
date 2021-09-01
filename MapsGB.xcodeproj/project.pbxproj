@@ -18,6 +18,15 @@
 		7CE2944F26D91154000FCD1E /* RouteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2944E26D91154000FCD1E /* RouteStorage.swift */; };
 		7CE2945226D91276000FCD1E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2945126D91276000FCD1E /* Location.swift */; };
 		7CE2945426D91B41000FCD1E /* UiAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2945326D91B41000FCD1E /* UiAlert.swift */; };
+		7CE2945826DE4F12000FCD1E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2945726DE4F12000FCD1E /* Auth.storyboard */; };
+		7CE2945A26DE4F2C000FCD1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2945926DE4F2C000FCD1E /* LoginViewController.swift */; };
+		7CE2945C26DE4F8D000FCD1E /* RecoveryPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2945B26DE4F8D000FCD1E /* RecoveryPasswordViewController.swift */; };
+		7CE2945E26DE5139000FCD1E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2945D26DE5139000FCD1E /* MainViewController.swift */; };
+		7CE2946226DE8D00000FCD1E /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2946126DE8D00000FCD1E /* Launch.storyboard */; };
+		7CE2946426DE8D20000FCD1E /* RootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946326DE8D20000FCD1E /* RootSegue.swift */; };
+		7CE2946626DE8D32000FCD1E /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946526DE8D32000FCD1E /* Launch.swift */; };
+		7CE2946926DFC067000FCD1E /* UiWindow + keyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946826DFC067000FCD1E /* UiWindow + keyWindow.swift */; };
+		7CE2946B26DFC3C5000FCD1E /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946A26DFC3C5000FCD1E /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,15 @@
 		7CE2944E26D91154000FCD1E /* RouteStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStorage.swift; sourceTree = "<group>"; };
 		7CE2945126D91276000FCD1E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		7CE2945326D91B41000FCD1E /* UiAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiAlert.swift; sourceTree = "<group>"; };
+		7CE2945726DE4F12000FCD1E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		7CE2945926DE4F2C000FCD1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CE2945B26DE4F8D000FCD1E /* RecoveryPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordViewController.swift; sourceTree = "<group>"; };
+		7CE2945D26DE5139000FCD1E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7CE2946126DE8D00000FCD1E /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		7CE2946326DE8D20000FCD1E /* RootSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSegue.swift; sourceTree = "<group>"; };
+		7CE2946526DE8D32000FCD1E /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		7CE2946826DFC067000FCD1E /* UiWindow + keyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiWindow + keyWindow.swift"; sourceTree = "<group>"; };
+		7CE2946A26DFC3C5000FCD1E /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		ACAB7EEC6C7E18A1DCF1642F /* Pods-MapsGB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsGB.release.xcconfig"; path = "Target Support Files/Pods-MapsGB/Pods-MapsGB.release.xcconfig"; sourceTree = "<group>"; };
 		D9198D5F23945E38F75A1D0F /* Pods-MapsGB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsGB.debug.xcconfig"; path = "Target Support Files/Pods-MapsGB/Pods-MapsGB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,13 +89,12 @@
 		7C467F3726D5157600982D27 /* MapsGB */ = {
 			isa = PBXGroup;
 			children = (
+				7CE2945F26DE8CD5000FCD1E /* Flows */,
 				7CE2945026D91268000FCD1E /* Models */,
 				7CE2944D26D9113C000FCD1E /* Realm */,
 				7C467F4E26D528D700982D27 /* style.json */,
 				7C467F3826D5157600982D27 /* AppDelegate.swift */,
 				7C467F3A26D5157600982D27 /* SceneDelegate.swift */,
-				7C467F4C26D517F200982D27 /* MapViewController.swift */,
-				7C467F3E26D5157600982D27 /* Main.storyboard */,
 				7C467F4126D5157900982D27 /* Assets.xcassets */,
 				7C467F4326D5157900982D27 /* LaunchScreen.storyboard */,
 				7C467F4626D5157900982D27 /* Info.plist */,
@@ -100,6 +117,56 @@
 				7CE2945326D91B41000FCD1E /* UiAlert.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7CE2945526DE4E57000FCD1E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7C467F3E26D5157600982D27 /* Main.storyboard */,
+				7C467F4C26D517F200982D27 /* MapViewController.swift */,
+				7CE2945D26DE5139000FCD1E /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7CE2945626DE4E62000FCD1E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2945726DE4F12000FCD1E /* Auth.storyboard */,
+				7CE2945926DE4F2C000FCD1E /* LoginViewController.swift */,
+				7CE2945B26DE4F8D000FCD1E /* RecoveryPasswordViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7CE2945F26DE8CD5000FCD1E /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2946726DFC043000FCD1E /* Core */,
+				7CE2946026DE8CE3000FCD1E /* Launch */,
+				7CE2945626DE4E62000FCD1E /* Auth */,
+				7CE2945526DE4E57000FCD1E /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		7CE2946026DE8CE3000FCD1E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2946126DE8D00000FCD1E /* Launch.storyboard */,
+				7CE2946526DE8D32000FCD1E /* Launch.swift */,
+				7CE2946326DE8D20000FCD1E /* RootSegue.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		7CE2946726DFC043000FCD1E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7CE2946826DFC067000FCD1E /* UiWindow + keyWindow.swift */,
+				7CE2946A26DFC3C5000FCD1E /* BaseRouter.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		8E367AA17521EBDB0E6E2A5D /* Frameworks */ = {
@@ -181,8 +248,10 @@
 			files = (
 				7C467F4526D5157900982D27 /* LaunchScreen.storyboard in Resources */,
 				7C467F4226D5157900982D27 /* Assets.xcassets in Resources */,
+				7CE2945826DE4F12000FCD1E /* Auth.storyboard in Resources */,
 				7C467F4026D5157600982D27 /* Main.storyboard in Resources */,
 				7C467F4F26D528D700982D27 /* style.json in Resources */,
+				7CE2946226DE8D00000FCD1E /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE2945C26DE4F8D000FCD1E /* RecoveryPasswordViewController.swift in Sources */,
+				7CE2945A26DE4F2C000FCD1E /* LoginViewController.swift in Sources */,
 				7CE2945426D91B41000FCD1E /* UiAlert.swift in Sources */,
+				7CE2946626DE8D32000FCD1E /* Launch.swift in Sources */,
 				7C467F3926D5157600982D27 /* AppDelegate.swift in Sources */,
 				7CE2944F26D91154000FCD1E /* RouteStorage.swift in Sources */,
 				7CE2945226D91276000FCD1E /* Location.swift in Sources */,
+				7CE2946B26DFC3C5000FCD1E /* BaseRouter.swift in Sources */,
+				7CE2945E26DE5139000FCD1E /* MainViewController.swift in Sources */,
 				7CE2944C26D7C2B2000FCD1E /* MapViewController.swift in Sources */,
 				7C467F3B26D5157600982D27 /* SceneDelegate.swift in Sources */,
+				7CE2946426DE8D20000FCD1E /* RootSegue.swift in Sources */,
+				7CE2946926DFC067000FCD1E /* UiWindow + keyWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
