@@ -16,6 +16,6 @@ final class MainViewController: UIViewController {
     
     @IBAction func logout(_ sender: Any) {
         UserDefaults.standard.set(false, forKey: "isLogin")
-        performSegue(withIdentifier: "toLAunch", sender: sender)
+        performSegue(withIdentifier: "logout", sender: sender)
     }
 }

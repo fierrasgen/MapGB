@@ -27,6 +27,8 @@
 		7CE2946626DE8D32000FCD1E /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946526DE8D32000FCD1E /* Launch.swift */; };
 		7CE2946926DFC067000FCD1E /* UiWindow + keyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946826DFC067000FCD1E /* UiWindow + keyWindow.swift */; };
 		7CE2946B26DFC3C5000FCD1E /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946A26DFC3C5000FCD1E /* BaseRouter.swift */; };
+		7CE2946D26E0DB48000FCD1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946C26E0DB48000FCD1E /* User.swift */; };
+		7CE2946F26E0DF4A000FCD1E /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2946E26E0DF4A000FCD1E /* UserStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		7CE2946526DE8D32000FCD1E /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		7CE2946826DFC067000FCD1E /* UiWindow + keyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiWindow + keyWindow.swift"; sourceTree = "<group>"; };
 		7CE2946A26DFC3C5000FCD1E /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		7CE2946C26E0DB48000FCD1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7CE2946E26E0DF4A000FCD1E /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		ACAB7EEC6C7E18A1DCF1642F /* Pods-MapsGB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsGB.release.xcconfig"; path = "Target Support Files/Pods-MapsGB/Pods-MapsGB.release.xcconfig"; sourceTree = "<group>"; };
 		D9198D5F23945E38F75A1D0F /* Pods-MapsGB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsGB.debug.xcconfig"; path = "Target Support Files/Pods-MapsGB/Pods-MapsGB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE2944E26D91154000FCD1E /* RouteStorage.swift */,
+				7CE2946E26E0DF4A000FCD1E /* UserStorage.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE2945126D91276000FCD1E /* Location.swift */,
+				7CE2946C26E0DB48000FCD1E /* User.swift */,
 				7CE2945326D91B41000FCD1E /* UiAlert.swift */,
 			);
 			path = Models;
@@ -327,6 +333,7 @@
 				7CE2946626DE8D32000FCD1E /* Launch.swift in Sources */,
 				7C467F3926D5157600982D27 /* AppDelegate.swift in Sources */,
 				7CE2944F26D91154000FCD1E /* RouteStorage.swift in Sources */,
+				7CE2946D26E0DB48000FCD1E /* User.swift in Sources */,
 				7CE2945226D91276000FCD1E /* Location.swift in Sources */,
 				7CE2946B26DFC3C5000FCD1E /* BaseRouter.swift in Sources */,
 				7CE2945E26DE5139000FCD1E /* MainViewController.swift in Sources */,
@@ -334,6 +341,7 @@
 				7C467F3B26D5157600982D27 /* SceneDelegate.swift in Sources */,
 				7CE2946426DE8D20000FCD1E /* RootSegue.swift in Sources */,
 				7CE2946926DFC067000FCD1E /* UiWindow + keyWindow.swift in Sources */,
+				7CE2946F26E0DF4A000FCD1E /* UserStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
