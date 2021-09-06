@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="Launch" customModule="MapsGB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="router" destination="d54-LJ-O2Y" id="lWn-Dl-oBy"/>
+                        <segue destination="pTN-CU-rVX" kind="show" identifier="toAuth" customClass="RootSegue" customModule="MapsGB" customModuleProvider="target" id="Qly-vV-ww6"/>
+                        <segue destination="LZd-j1-AH5" kind="show" identifier="toMain" customClass="RootSegue" customModule="MapsGB" customModuleProvider="target" id="nZz-OT-D7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="d54-LJ-O2Y" customClass="LaunchRouter" customModule="MapsGB" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="Y6W-OH-hqX" id="yX5-ez-2QN"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="97" y="75"/>
+        </scene>
+        <!--Auth-->
+        <scene sceneID="HDx-rK-rZH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auth" id="pTN-CU-rVX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HDh-vO-r3N"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb6-zj-yh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="11"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="AI6-s6-slp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="LZd-j1-AH5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bVU-R7-gnF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUI-qg-a5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
