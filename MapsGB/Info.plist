@@ -74,5 +74,9 @@
 	<string>To watch your position in background</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>Для сэлфи</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Для загрузки</string>
 </dict>
 </plist>
